@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "pnpm update --latest",
     "start": "node ."
   },
   "keywords": [],
