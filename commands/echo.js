@@ -1,4 +1,9 @@
-const { SlashCommandBuilder, ChannelType, EmbedBuilder } = require('discord.js');
+const {
+  SlashCommandBuilder,
+  ChannelType,
+  EmbedBuilder,
+  PermissionFlagsBits,
+} = require('discord.js');
 module.exports = {
   cooldown: 10,
   data: new SlashCommandBuilder()
@@ -23,7 +28,8 @@ module.exports = {
         .setName('embed')
         .setDescription('Whether or not the echo should be embedded')
         .setRequired(true),
-    ),
+    )
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
   async execute(interaction) {
     const input = interaction.options.getString('input');
     const channel = interaction.options.getChannel('channel');
