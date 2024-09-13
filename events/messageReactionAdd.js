@@ -1,37 +1,7 @@
 const axios = require('axios');
 const { Events, EmbedBuilder } = require('discord.js');
 const { deeplApiKey } = require('../config.json');
-const languageMap = {
-  '🇧🇬': 'BG',
-  '🇨🇳': 'ZH',
-  '🇨🇿': 'CS',
-  '🇩🇰': 'DA',
-  '🇳🇱': 'NL',
-  '🇬🇧': 'EN-GB',
-  '🏴󠁧󠁢󠁥󠁮󠁧󠁿': 'EN-GB',
-  '🇺🇸': 'EN-US',
-  '🇺🇲': 'EN-US',
-  '🇪🇪': 'ET',
-  '🇫🇮': 'FI',
-  '🇫🇷': 'FR',
-  '🇩🇪': 'DE',
-  '🇬🇷': 'EL',
-  '🇭🇺': 'HU',
-  '🇮🇹': 'IT',
-  '🇯🇵': 'JA',
-  '🇱🇻': 'LV',
-  '🇱🇹': 'LT',
-  '🇵🇱': 'PL',
-  '🇵🇹': 'PT-PT',
-  '🇧🇷': 'PT-BR',
-  '🇷🇴': 'RO',
-  '🇷🇺': 'RU',
-  '🇸🇰': 'SK',
-  '🇸🇮': 'SL',
-  '🇪🇸': 'ES',
-  '🇪🇦': 'ES',
-  '🇸🇪': 'SV',
-};
+const { languageMap } = require('./languageMap');
 module.exports = {
   name: Events.MessageReactionAdd,
   async execute(reaction, user) {
