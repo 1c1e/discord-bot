@@ -36,7 +36,7 @@ module.exports = {
           const sourceLanguage = response.data.translations[0].detected_source_language;
           const embed = new EmbedBuilder()
             .setDescription(translatedText)
-            .setFooter({ text: `Translated from ${sourceLanguage} to ${targetLanguage}` });
+            .setFooter({ text: `${sourceLanguage} → ${targetLanguage}` });
           await message.reply({ embeds: [embed], allowedMentions: { repliedUser: false } });
           console.log(
             `Message ${reaction.message.id} translated to ${targetLanguage} from ${sourceLanguage}.`,
