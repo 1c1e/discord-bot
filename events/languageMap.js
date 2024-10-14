@@ -40,5 +40,12 @@ const languageMap = {
   '🇲🇴': 'ZH-HANT',
   '🇦🇺': 'EN-GB',
   '🇳🇿': 'EN-GB',
+  '🇲🇽': 'ES',
+  '🇩🇿': 'AR',
+  '🇦🇴': 'PT-PT',
+  '🇦🇷': 'ES',
+  '🇦🇹': 'DE',
+  '🇮🇶': 'AR',
+  '🇱🇷': 'EN-US',  
 };
 exports.languageMap = languageMap;
