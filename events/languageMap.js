@@ -46,6 +46,7 @@ const languageMap = {
   '🇦🇷': 'ES',
   '🇦🇹': 'DE',
   '🇮🇶': 'AR',
-  '🇱🇷': 'EN-US',  
+  '🇱🇷': 'EN-US',
+  '🇨🇵': 'FR',
 };
 exports.languageMap = languageMap;
